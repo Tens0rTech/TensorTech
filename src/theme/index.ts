@@ -1,0 +1,20 @@
+export const COLORS = {
+  PRIMARY: "#1C3F5F",
+  SECONDARY: "#E44212",
+  LIGHT_BLUE: "#1170A0",
+  RED: "#AE032C",
+  WHITE: "#FFF",
+  LIGHT_GRAY: "#D9D9D9",
+  GRAY: "#CFCFCF",
+};
+
+export const FONT_WEIGHT = {
+  THIN: 100,
+  LIGHT: 300,
+  REGULAR: 400,
+  MEDIUM: 500,
+  SEMI_BOLD: 600,
+  BOLD: 700,
+  EXTRA_BOLD: 800,
+  BLACK: 900,
+};
