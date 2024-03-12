@@ -15,7 +15,7 @@ import {
   ImageCard,
 } from "./style";
 
-export default function About() {
+export default function Solutions() {
   return (
     <Section
       title="o que fazemos"

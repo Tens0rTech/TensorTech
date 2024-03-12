@@ -1,5 +1,5 @@
 import Header from "../../components/Header";
-import About from "./About";
+import Solutions from "./Solutions";
 import ImpactionSection from "./ImpactionSection";
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Header />
       <ImpactionSection />
-      <About />
+      <Solutions />
     </>
   );
 }
