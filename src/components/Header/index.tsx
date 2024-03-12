@@ -26,6 +26,7 @@ export default function Header() {
           <Spaced>
             <Option id="solutions">Soluções</Option>
             <Option id="about">Quem somos</Option>
+            <Option id="client">Clientes</Option>
             <Option id="blog">Blog</Option>
             <Button>CONTATO</Button>
           </Spaced>
