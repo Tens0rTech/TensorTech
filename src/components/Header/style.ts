@@ -8,9 +8,10 @@ type HeadProps = {
 
 export const Head = styled.div<HeadProps>`
   width: 100%;
-  padding: 8px 0;
+  padding: 2px 0;
   background-color: ${({ isTransparent }) =>
     isTransparent ? "transparent" : "#1c3f5f40"};
+  position: ${({ isTransparent }) => (isTransparent ? "absolute" : "static")};
 `;
 
 export const Flex = styled.div`
@@ -23,6 +24,7 @@ export const ImageText = styled.div`
 
   p {
     color: ${COLORS.PRIMARY};
+    font-size: 18px;
   }
 `;
 
@@ -46,6 +48,7 @@ export const Option = styled.a`
   font-weight: ${FONT_WEIGHT.BOLD};
   padding: 8px;
   margin: 2px 4px;
+  font-size: 18px;
   &:hover {
     margin-bottom: 0;
     border-bottom: 2px solid ${COLORS.PRIMARY};
