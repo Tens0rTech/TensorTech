@@ -6,7 +6,7 @@ type ContextProps = {
 };
 
 export const Context = styled.div<ContextProps>`
-  padding: 32px 0;
+  padding: 48px 0;
   background: ${({ backgroundColor }) => backgroundColor ?? COLORS.WHITE};
 `;
 
