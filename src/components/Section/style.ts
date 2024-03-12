@@ -17,7 +17,7 @@ export const TextCenter = styled.div`
 export const Description = styled.p`
   font-size: 20px;
   padding: 24px 0;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 `;
 
