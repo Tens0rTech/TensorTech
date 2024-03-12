@@ -1,6 +1,6 @@
 import Container from "../Container";
 import Title from "../Title";
-import { Context, Description, TextCenter } from "./style";
+import { Children, Context, Description, TextCenter } from "./style";
 
 type SectionProps = {
   title: string;
@@ -24,7 +24,7 @@ export default function Section({
           <Title name={title} whiteTitle={whiteTitle} />
           {description && <Description>{description}</Description>}
         </TextCenter>
-        {children}
+        <Children>{children}</Children>
       </Container>
     </Context>
   );

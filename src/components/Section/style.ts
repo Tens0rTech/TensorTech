@@ -15,6 +15,12 @@ export const TextCenter = styled.div`
 `;
 
 export const Description = styled.p`
-  font-size: 18px;
-  padding: 32px 0;
+  font-size: 20px;
+  padding: 24px 0;
+  width: 85%;
+  margin: 0 auto;
+`;
+
+export const Children = styled.div`
+  margin-top: 24px;
 `;
