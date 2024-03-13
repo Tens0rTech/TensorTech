@@ -13,12 +13,14 @@ type SolutionCard = {
   title: string;
   description: string;
   image: string;
+  click?: () => void;
 };
 
 export default function SolutionCard({
   title,
   description,
   image,
+  click = () => null,
 }: SolutionCard) {
   return (
     <Card>
@@ -27,7 +29,7 @@ export default function SolutionCard({
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardContent>
-      <CardLink>
+      <CardLink onClick={() => click()}>
         SAIBA MAIS
         <CardLinkImage src={Arrow} />
       </CardLink>

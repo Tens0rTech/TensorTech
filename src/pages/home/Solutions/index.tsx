@@ -30,6 +30,7 @@ export default function Solutions() {
           fornecer insights estratégicos e soluções práticas para os desafios
           específicos do seu negócio."
           image={Search}
+          click={() => console.log("consultoria")}
         />
         <SolutionCard
           title="Análise de Dados Profunda e Estratégica"
@@ -38,6 +39,7 @@ export default function Solutions() {
           estratégicos que orientam suas decisões de negócios e impulsionam
           o crescimento sustentável."
           image={Chart}
+          click={() => console.log("analise")}
         />
         <SolutionCard
           title="Suporte Técnico Personalizado e Confiável"
@@ -47,6 +49,7 @@ export default function Solutions() {
           que você possa se concentrar no que faz de melhor: administrar seu
           negócio."
           image={Headset}
+          click={() => console.log("suporte")}
         />
         <SolutionCard
           title="Desenvolvimento Sob Medida de Soluções Tecnológicas"
@@ -56,6 +59,7 @@ export default function Solutions() {
           aqui para ajudá-lo a atingir seus objetivos de negócios com
           eficiência e excelência."
           image={Search}
+          click={() => console.log("desenvolvimento")}
         />
       </Cards>
     </Section>

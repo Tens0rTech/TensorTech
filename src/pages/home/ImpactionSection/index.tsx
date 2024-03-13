@@ -24,7 +24,10 @@ export default function ImpactionSection() {
             <br />
             de médio Porte.
           </ImpactDescription>
-          <Button title="conheça nosso serviços" />
+          <Button
+            title="conheça nosso serviços"
+            click={() => console.log("contato")}
+          />
         </ImpactContent>
       </Container>
     </ImpactSection>
