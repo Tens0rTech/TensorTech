@@ -12,7 +12,7 @@ export const ImpactSection = styled.div`
 `;
 
 export const ImpactContent = styled.div`
-  width: 30%;
+  width: 650px;
   height: 500px;
   position: absolute;
   margin-top: 320px;

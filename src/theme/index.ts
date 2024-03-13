@@ -4,8 +4,7 @@ export const COLORS = {
   LIGHT_BLUE: "#1170A0",
   RED: "#AE032C",
   WHITE: "#FFF",
-  LIGHT_GRAY: "#D9D9D9",
-  GRAY: "#CFCFCF",
+  GRAY: "#E7E7E7",
 };
 
 export const FONT_WEIGHT = {
