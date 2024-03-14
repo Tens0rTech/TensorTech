@@ -6,7 +6,7 @@ export default function Clients() {
       title="algum dos nossos clientes"
       description="Na TENSORTECH, acreditamos no relacionamento duradouro, de transparência e confiança."
     >
-      <p>clients</p>
+      <p style={{ textAlign: "center" }}>clients</p>
     </Section>
   );
 }

@@ -3,8 +3,17 @@ import { Context } from "./style";
 type TitleProps = {
   name: string;
   whiteTitle: boolean;
+  fullWidth?: boolean;
 };
 
-export default function Title({ name, whiteTitle = false }: TitleProps) {
-  return <Context whiteTitle={whiteTitle}>{name.toUpperCase()}</Context>;
+export default function Title({
+  name,
+  whiteTitle = false,
+  fullWidth = false,
+}: TitleProps) {
+  return (
+    <Context whiteTitle={whiteTitle} fullWidth={fullWidth}>
+      {name.toUpperCase()}
+    </Context>
+  );
 }
