@@ -13,7 +13,7 @@ export default function Title({
 }: TitleProps) {
   return (
     <Context whiteTitle={whiteTitle} fullWidth={fullWidth}>
-      {name.toUpperCase()}
+      {fullWidth ? name : name.toUpperCase()}
     </Context>
   );
 }

@@ -1,11 +1,14 @@
 import { styled } from "styled-components";
 import { COLORS, FONT_WEIGHT } from "../../theme";
 
-export const Section = styled.div`
-  width: 100%;
-  padding: 80px 0;
+export const Content = styled.div`
   background: ${COLORS.PRIMARY};
   color: ${COLORS.WHITE};
+`;
+
+export const Section = styled.div`
+  width: 48%;
+  padding: 80px 0;
 `;
 
 export const Flex = styled.div`
@@ -17,9 +20,9 @@ export const Flex = styled.div`
 export const Description = styled.p`
   font-weight: ${FONT_WEIGHT.MEDIUM};
   font-size: 24px;
-  padding: 18px 0;
+  padding: 24px 0;
 `;
 
 export const ImageSection = styled.img`
-  width: 534px;
+  width: 50%;
 `;

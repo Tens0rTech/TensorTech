@@ -1,7 +1,7 @@
 import Button from "../Button";
 import Container from "../Container";
 import Title from "../Title";
-import { Description, Flex, ImageSection, Section } from "./style";
+import { Content, Description, Flex, ImageSection, Section } from "./style";
 
 type BlueSectionProps = {
   title: string;
@@ -19,10 +19,10 @@ export default function BlueSection({
   image,
 }: BlueSectionProps) {
   return (
-    <Section>
+    <Content>
       <Container>
         <Flex>
-          <div style={{ width: "55%" }}>
+          <Section>
             <Title name={title} whiteTitle fullWidth />
             <Description>{description}</Description>
             {image && (
@@ -30,9 +30,10 @@ export default function BlueSection({
                 title={buttonTitle}
                 click={() => buttonClick()}
                 secondary
+                width={"180px"}
               />
             )}
-          </div>
+          </Section>
           {!image ? (
             <Button
               title={buttonTitle}
@@ -45,6 +46,6 @@ export default function BlueSection({
           )}
         </Flex>
       </Container>
-    </Section>
+    </Content>
   );
 }

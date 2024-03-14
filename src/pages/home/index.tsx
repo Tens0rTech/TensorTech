@@ -5,6 +5,7 @@ import About from "./About";
 import Clients from "./Clients";
 import ContactSection from "./ContactSection";
 import Resume from "./Resume";
+import BlogSection from "./BlogSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Clients />
       <ContactSection />
       <Resume />
+      <BlogSection />
     </>
   );
 }
