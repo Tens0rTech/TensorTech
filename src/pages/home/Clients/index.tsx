@@ -16,10 +16,11 @@ export default function Clients() {
     dots: images.length > 4,
     infinite: images.length > 4,
     autoplay: images.length > 4,
+    slidesToScroll: images.length > 4 ? 1 : 4,
+    arrows: false,
     autoplaySpeed: 5000,
     speed: 1000,
     slidesToShow: 4,
-    slidesToScroll: images.length > 4 ? 1 : 4,
     responsive: [
       {
         breakpoint: 1366,
