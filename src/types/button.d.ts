@@ -3,4 +3,5 @@ type ButtonProps = {
   secondary?: boolean;
   click?: () => void;
   width?: string;
+  type?: string;
 };

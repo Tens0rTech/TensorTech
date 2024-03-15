@@ -5,9 +5,15 @@ export default function Button({
   secondary = false,
   click = () => null,
   width,
+  type,
 }: ButtonProps) {
   return (
-    <Context secondary={secondary} onClick={() => click()} width={width}>
+    <Context
+      secondary={secondary}
+      onClick={() => click()}
+      width={width}
+      type={type ?? "button"}
+    >
       {title?.toUpperCase()}
     </Context>
   );

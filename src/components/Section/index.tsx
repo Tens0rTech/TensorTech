@@ -3,7 +3,7 @@ import Title from "../Title";
 import { Children, Context, Description, TextCenter } from "./style";
 
 type SectionProps = {
-  title: string;
+  title?: string;
   description?: string;
   backgroundColor?: string;
   whiteTitle?: boolean;
@@ -21,7 +21,7 @@ export default function Section({
     <Context backgroundColor={backgroundColor}>
       <Container>
         <TextCenter>
-          <Title name={title} whiteTitle={whiteTitle} />
+          {title && <Title name={title} whiteTitle={whiteTitle} />}
           {description && <Description>{description}</Description>}
         </TextCenter>
         <Children>{children}</Children>
