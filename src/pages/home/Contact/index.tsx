@@ -206,7 +206,7 @@ export default function Contact() {
               <Button
                 title="Enviar"
                 type="submit"
-                width="25%"
+                width="45%"
                 loading={onSubmitMutation.isPending}
               />
             </FormDiv>

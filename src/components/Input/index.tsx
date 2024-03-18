@@ -12,10 +12,12 @@ export default function Input({
 }: InputProps) {
   return (
     <FormGroup>
-      <h5>
-        {label}
-        {required && " *"}
-      </h5>
+      {label && (
+        <h5>
+          {label}
+          {required && " *"}
+        </h5>
+      )}
       <input
         type={type}
         placeholder={placeholder}

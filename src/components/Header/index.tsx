@@ -28,7 +28,9 @@ export default function Header() {
             <Option id="about">Quem somos</Option>
             <Option id="client">Clientes</Option>
             <Option id="blog">Blog</Option>
-            <Button onClick={() => console.log("contato")}>CONTATO</Button>
+            <Button width="148px" onClick={() => console.log("contato")}>
+              CONTATO
+            </Button>
           </Spaced>
         </Spaced>
       </Container>

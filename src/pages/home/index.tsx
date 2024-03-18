@@ -7,6 +7,7 @@ import ContactSection from "./ContactSection";
 import Resume from "./Resume";
 import BlogSection from "./BlogSection";
 import Contact from "./Contact";
+import Newsletter from "./Newsletter";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Resume />
       <BlogSection />
       <Contact />
+      <Newsletter />
     </>
   );
 }

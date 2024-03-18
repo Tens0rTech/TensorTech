@@ -27,6 +27,7 @@ export default function ImpactionSection() {
           <Button
             title="conheça nosso serviços"
             click={() => console.log("contato")}
+            width="50%"
           />
         </ImpactContent>
       </Container>

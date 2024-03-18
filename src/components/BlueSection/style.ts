@@ -19,7 +19,7 @@ export const Flex = styled.div`
 
 export const Description = styled.p`
   font-weight: ${FONT_WEIGHT.MEDIUM};
-  font-size: 24px;
+  font-size: 20px;
   padding: 24px 0;
 `;
 
