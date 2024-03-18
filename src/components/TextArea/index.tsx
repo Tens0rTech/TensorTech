@@ -1,13 +1,12 @@
 import { InputProps } from "../../types/input";
 import FormGroup from "../FormGroup";
 
-export default function Input({
+export default function TextArea({
   value,
   onChange,
   label,
   placeholder,
   error,
-  type = "text",
   required = false,
 }: InputProps) {
   return (
@@ -16,13 +15,13 @@ export default function Input({
         {label}
         {required && " *"}
       </h5>
-      <input
-        type={type}
+      <textarea
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange(e)}
         required={required}
-      />
+        rows={5}
+      ></textarea>
       {error && <p>{error}</p>}
     </FormGroup>
   );

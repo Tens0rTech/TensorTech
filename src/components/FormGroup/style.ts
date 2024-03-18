@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { COLORS, FONT_WEIGHT } from "../../theme";
+import Arrow from "../../assets/images/arrowDropdown.svg";
 
 export const InputGroup = styled.div`
   display: flex;
@@ -16,12 +17,36 @@ export const InputGroup = styled.div`
     color: ${COLORS.RED};
   }
 
-  input {
+  input,
+  select,
+  textarea {
     outline: none;
     border: 1px solid black;
     border-radius: 10px;
     font-size: 16px;
     padding: 12px;
     margin: 8px 0 4px 0;
+  }
+
+  select {
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+    background-image: url(${Arrow});
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  option {
+    color: #000;
+  }
+
+  input[type="radio"] {
+    width: 18px;
+    height: 18px;
   }
 `;

@@ -6,9 +6,10 @@ import { Content, Description, Flex, ImageSection, Section } from "./style";
 type BlueSectionProps = {
   title: string;
   description: string;
-  buttonTitle: string;
-  buttonClick: () => void;
+  buttonTitle?: string;
+  buttonClick?: () => void;
   image?: string;
+  children?: React.ReactNode;
 };
 
 export default function BlueSection({
@@ -17,6 +18,7 @@ export default function BlueSection({
   buttonTitle,
   buttonClick,
   image,
+  children,
 }: BlueSectionProps) {
   return (
     <Content>
@@ -25,7 +27,7 @@ export default function BlueSection({
           <Section>
             <Title name={title} whiteTitle fullWidth />
             <Description>{description}</Description>
-            {image && (
+            {image && buttonClick && (
               <Button
                 title={buttonTitle}
                 click={() => buttonClick()}
@@ -34,16 +36,7 @@ export default function BlueSection({
               />
             )}
           </Section>
-          {!image ? (
-            <Button
-              title={buttonTitle}
-              click={() => buttonClick()}
-              secondary
-              width={"454px"}
-            />
-          ) : (
-            <ImageSection src={image} />
-          )}
+          {!image ? children : <ImageSection src={image} />}
         </Flex>
       </Container>
     </Content>

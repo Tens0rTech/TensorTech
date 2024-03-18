@@ -1,3 +1,4 @@
+import Spinner from "../Spinner";
 import { Context } from "./style";
 
 export default function Button({
@@ -6,6 +7,7 @@ export default function Button({
   click = () => null,
   width,
   type,
+  loading = false,
 }: ButtonProps) {
   return (
     <Context
@@ -13,7 +15,14 @@ export default function Button({
       onClick={() => click()}
       width={width}
       type={type ?? "button"}
+      disabled={loading}
+      loading={loading}
     >
+      {loading && (
+        <div style={{ marginRight: 8 }}>
+          <Spinner />
+        </div>
+      )}
       {title?.toUpperCase()}
     </Context>
   );

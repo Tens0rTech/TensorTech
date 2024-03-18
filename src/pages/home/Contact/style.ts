@@ -22,12 +22,27 @@ export const Description = styled.p`
   margin-top: 24px;
 `;
 
-export const FormDiv = styled.div`
+export const FormContainer = styled.form`
   width: 630px;
-  padding: 18px 24px;
   border-radius: 30px;
   background-color: ${COLORS.WHITE};
+`;
+
+export const FormDiv = styled.div`
+  padding: 22px 24px;
+`;
+
+export const FormContent = styled.div`
   display: grid;
   gap: 18px;
   grid-template-columns: auto auto;
+  padding-bottom: 22px;
+`;
+
+export const Privacy = styled.p`
+  margin-bottom: 22px;
+
+  a {
+    color: #000;
+  }
 `;

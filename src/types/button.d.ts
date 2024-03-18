@@ -4,4 +4,5 @@ type ButtonProps = {
   click?: () => void;
   width?: string;
   type?: string;
+  loading?: boolean;
 };

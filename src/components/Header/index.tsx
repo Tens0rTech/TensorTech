@@ -13,7 +13,7 @@ import logo from "../../assets/images/logo.svg";
 
 export default function Header() {
   return (
-    <Head isTransparent>
+    <Head isTransparent={true}>
       <Container>
         <Spaced>
           <Flex>
