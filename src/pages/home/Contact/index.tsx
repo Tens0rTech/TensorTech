@@ -24,7 +24,7 @@ import { ContactProps } from "../../../types/contact";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export default function Contact() {
+export default function Contact({ referance }: SectionsProps) {
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -117,7 +117,7 @@ export default function Contact() {
   }
 
   return (
-    <Section backgroundColor={COLORS.GRAY}>
+    <Section backgroundColor={COLORS.GRAY} referance={referance}>
       <Flex>
         <Content>
           <Title>ENTRE EM CONTATO</Title>

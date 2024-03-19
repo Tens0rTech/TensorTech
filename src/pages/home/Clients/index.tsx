@@ -9,7 +9,7 @@ import Mondiale from "../../../assets/images/carousel/mondiale.svg";
 import { Dot, Dots } from "./style";
 import Slide from "./slide";
 
-export default function Clients() {
+export default function Clients({ referance }: SectionsProps) {
   const images = [KeK, Orletti, Unimed, Mondiale];
 
   const settings = {
@@ -44,6 +44,7 @@ export default function Clients() {
 
   return (
     <Section
+      referance={referance}
       title="algum dos nossos clientes"
       description="Na TENSORTECH, acreditamos no relacionamento duradouro, de transparência e confiança."
     >

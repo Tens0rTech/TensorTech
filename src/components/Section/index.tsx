@@ -8,6 +8,7 @@ type SectionProps = {
   backgroundColor?: string;
   whiteTitle?: boolean;
   children: React.ReactNode;
+  referance?: React.MutableRefObject<any>;
 };
 
 export default function Section({
@@ -16,9 +17,10 @@ export default function Section({
   backgroundColor,
   whiteTitle = false,
   children,
+  referance,
 }: SectionProps) {
   return (
-    <Context backgroundColor={backgroundColor}>
+    <Context backgroundColor={backgroundColor} ref={referance}>
       <Container>
         <TextCenter>
           {title && <Title name={title} whiteTitle={whiteTitle} />}

@@ -9,19 +9,31 @@ import BlogSection from "./BlogSection";
 import Contact from "./Contact";
 import Newsletter from "./Newsletter";
 import Footer from "../../components/Footer";
+import { useRef } from "react";
 
 export default function Home() {
+  const solutionsRef = useRef<any>(null);
+  const clientsRef = useRef<any>(null);
+  const contactRef = useRef<any>(null);
+  const resumeRef = useRef<any>(null);
+
   return (
     <>
-      <Header />
+      <Header
+        transparent
+        solutionsRef={solutionsRef}
+        clientsRef={clientsRef}
+        contactRef={contactRef}
+        resumeRef={resumeRef}
+      />
       <ImpactionSection />
-      <Solutions />
+      <Solutions referance={solutionsRef} />
       <About />
-      <Clients />
+      <Clients referance={clientsRef} />
       <ContactSection />
-      <Resume />
+      <Resume referance={resumeRef} />
       <BlogSection />
-      <Contact />
+      <Contact referance={contactRef} />
       <Newsletter />
       <Footer />
     </>

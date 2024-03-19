@@ -5,9 +5,10 @@ import Section from "../../../components/Section";
 import { Cards } from "./style";
 import SolutionCard from "./solutionCard";
 
-export default function Solutions() {
+export default function Solutions({ referance }: SectionsProps) {
   return (
     <Section
+      referance={referance}
       title="o que fazemos"
       description="Na TENSORTECH, estamos empenhados em impulsionar o crescimento e o sucesso do seu negócio. Nossos serviços abrangem uma ampla gama de soluções tecnológicas projetadas especificamente para atender às demandas dinâmicas das empresas de médio porte."
     >
