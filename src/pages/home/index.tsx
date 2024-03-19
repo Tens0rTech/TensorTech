@@ -8,6 +8,7 @@ import Resume from "./Resume";
 import BlogSection from "./BlogSection";
 import Contact from "./Contact";
 import Newsletter from "./Newsletter";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <BlogSection />
       <Contact />
       <Newsletter />
+      <Footer />
     </>
   );
 }

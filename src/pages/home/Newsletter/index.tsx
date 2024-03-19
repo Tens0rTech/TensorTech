@@ -4,6 +4,7 @@ import Button from "../../../components/Button";
 import Input from "../../../components/Input";
 import { useMutation } from "@tanstack/react-query";
 import { createNewsletter } from "../../../service/newsletter";
+import { NewsBox } from "./style";
 
 export default function Newsletter() {
   const [data, setData] = useState("");
@@ -22,26 +23,28 @@ export default function Newsletter() {
   });
 
   return (
-    <BlueSection
-      title="Inscreva-se em nossa newsletter"
-      description="e receba as principais tendências em tecnologia."
-    >
-      <div style={{ width: 410 }}>
-        <Input
-          value={data}
-          onChange={(e) => setData(e.target.value)}
-          type="email"
-          placeholder="E-mail"
-        />
-        <br />
-        <Button
-          title="cadastre-se"
-          width="100%"
-          secondary
-          click={() => onSubmit()}
-          loading={createNewsletterMutation.isPending}
-        />
-      </div>
-    </BlueSection>
+    <NewsBox>
+      <BlueSection
+        title="Inscreva-se em nossa newsletter"
+        description="e receba as principais tendências em tecnologia."
+      >
+        <div style={{ width: 410 }}>
+          <Input
+            value={data}
+            onChange={(e) => setData(e.target.value)}
+            type="email"
+            placeholder="E-mail"
+          />
+          <br />
+          <Button
+            title="cadastre-se"
+            width="100%"
+            secondary
+            click={() => onSubmit()}
+            loading={createNewsletterMutation.isPending}
+          />
+        </div>
+      </BlueSection>
+    </NewsBox>
   );
 }
