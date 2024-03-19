@@ -7,7 +7,7 @@ import {
   ImpactTitle,
 } from "./style";
 
-export default function ImpactionSection() {
+export default function ImpactionSection({ referance }: SectionsProps) {
   return (
     <ImpactSection>
       <Container>
@@ -26,7 +26,11 @@ export default function ImpactionSection() {
           </ImpactDescription>
           <Button
             title="conheça nosso serviços"
-            click={() => console.log("contato")}
+            click={() =>
+              referance?.current.scrollIntoView({
+                behavior: "smooth",
+              })
+            }
             width="50%"
           />
         </ImpactContent>

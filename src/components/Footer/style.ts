@@ -25,6 +25,7 @@ export const Content = styled.div`
 
 export const ImageFooter = styled.img`
   width: 230px;
+  cursor: pointer;
 `;
 
 export const InfoItem = styled.div`

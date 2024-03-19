@@ -30,7 +30,10 @@ export default function Header({
     <Head isTransparent={transparent}>
       <Container>
         <Spaced>
-          <Flex>
+          <Flex
+            onClick={() => window.scrollTo(0, 0)}
+            style={{ cursor: "pointer" }}
+          >
             <img src={logo} alt="tensortech logo" width={100} />
             <ImageText>
               <TT>TENSORTECH</TT>

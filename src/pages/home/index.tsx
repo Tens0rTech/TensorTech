@@ -26,11 +26,11 @@ export default function Home() {
         contactRef={contactRef}
         resumeRef={resumeRef}
       />
-      <ImpactionSection />
+      <ImpactionSection referance={contactRef} />
       <Solutions referance={solutionsRef} />
       <About />
       <Clients referance={clientsRef} />
-      <ContactSection />
+      <ContactSection referance={contactRef} />
       <Resume referance={resumeRef} />
       <BlogSection />
       <Contact referance={contactRef} />

@@ -1,7 +1,7 @@
 import BlueSection from "../../../components/BlueSection";
 import Button from "../../../components/Button";
 
-export default function ContactSection() {
+export default function ContactSection({ referance }: SectionsProps) {
   return (
     <BlueSection
       title="Descubra como podemos ser seu parceiro estratégico no caminho para o sucesso tecnológico."
@@ -11,7 +11,11 @@ export default function ContactSection() {
     >
       <Button
         title={"Fale Conosco"}
-        click={() => console.log("fale conosco")}
+        click={() =>
+          referance?.current.scrollIntoView({
+            behavior: "smooth",
+          })
+        }
         secondary
         width={"454px"}
       />

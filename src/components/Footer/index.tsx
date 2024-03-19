@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <Section backgroundColor={COLORS.PRIMARY}>
       <Foot>
-        <ImageFooter src={Logo} />
+        <ImageFooter src={Logo} onClick={() => window.scrollTo(0, 0)} />
         <Content>
           <InfoItem>
             <img src={Phone} />
@@ -43,7 +43,10 @@ export default function Footer() {
           <a href="https://www.instagram.com/tensor.tech/" target="_blank">
             <img src={Instagram} />
           </a>
-          <a href="" target="_blank">
+          <a
+            href="https://www.linkedin.com/company/tensortech-tecnologia/"
+            target="_blank"
+          >
             <img src={Linkedin} />
           </a>
           <a href="https://www.youtube.com/" target="_blank">
