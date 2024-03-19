@@ -12,6 +12,7 @@ import Footer from "../../components/Footer";
 import { useRef } from "react";
 
 export default function Home() {
+  const topRef = useRef<any>(null);
   const solutionsRef = useRef<any>(null);
   const clientsRef = useRef<any>(null);
   const contactRef = useRef<any>(null);
@@ -21,12 +22,13 @@ export default function Home() {
     <>
       <Header
         transparent
+        topRef={topRef}
         solutionsRef={solutionsRef}
         clientsRef={clientsRef}
         contactRef={contactRef}
         resumeRef={resumeRef}
       />
-      <ImpactionSection referance={contactRef} />
+      <ImpactionSection topRef={topRef} referance={contactRef} />
       <Solutions referance={solutionsRef} />
       <About />
       <Clients referance={clientsRef} />
@@ -35,7 +37,7 @@ export default function Home() {
       <BlogSection />
       <Contact referance={contactRef} />
       <Newsletter />
-      <Footer />
+      <Footer referance={topRef} />
     </>
   );
 }

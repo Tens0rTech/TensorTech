@@ -24,6 +24,7 @@ import { createContact } from "../../../service/contact";
 import { ContactProps } from "../../../types/contact";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
 
 export default function Contact({ referance }: SectionsProps) {
   const [data, setData] = useState({
@@ -207,7 +208,11 @@ export default function Contact({ referance }: SectionsProps) {
               </FormContent>
               <Privacy>
                 Ao informar seus dados, você estará ciente das diretrizes da
-                nossa <a href="#">Política de Privacidade</a>.
+                nossa{" "}
+                <Link to={"/politica-privacidade"} target="_blank">
+                  Política de Privacidade
+                </Link>
+                .
               </Privacy>
               <Button
                 title="Enviar"

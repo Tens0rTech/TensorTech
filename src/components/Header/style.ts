@@ -4,6 +4,7 @@ import { Context } from "../Button/style";
 
 type HeadProps = {
   isTransparent?: boolean;
+  notMenu?: boolean;
 };
 
 type OptionsProp = {
@@ -14,11 +15,11 @@ export const Head = styled.div<HeadProps>`
   width: 100%;
   padding: 2px 0;
   background-color: ${({ isTransparent }) =>
-    isTransparent ? "transparent" : COLORS.WHITE};
+    isTransparent ? "transparent" : COLORS.GRAY};
   position: ${({ isTransparent }) => (isTransparent ? "absolute" : "static")};
 
   @media (max-width: 950px) {
-    position: fixed;
+    position: ${({ notMenu }) => (!notMenu ? "fixed" : "static")};
     z-index: 999;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
   }

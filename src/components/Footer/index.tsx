@@ -9,11 +9,18 @@ import Instagram from "../../assets/images/instagram.svg";
 import Linkedin from "../../assets/images/linkedIn.svg";
 import YouTube from "../../assets/images/youtube.svg";
 
-export default function Footer() {
+export default function Footer({ referance }: SectionsProps) {
   return (
     <Section backgroundColor={COLORS.PRIMARY}>
       <Foot>
-        <ImageFooter src={Logo} onClick={() => window.scrollTo(0, 0)} />
+        <ImageFooter
+          src={Logo}
+          onClick={() =>
+            referance?.current.scrollIntoView({
+              behavior: "smooth",
+            })
+          }
+        />
         <Content>
           <InfoItem>
             <img src={Phone} />

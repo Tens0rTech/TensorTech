@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { COLORS, FONT_WEIGHT } from "../../../theme";
+import { Link } from "react-router-dom";
 
 export const Cards = styled.div`
   width: 100%;
@@ -59,12 +60,13 @@ export const CardDescription = styled.p`
   font-size: 14px;
 `;
 
-export const CardLink = styled.a`
+export const CardLink = styled(Link)`
   color: ${COLORS.SECONDARY};
   cursor: pointer;
   display: flex;
   align-items: center;
   padding: 12px;
+  text-decoration: none;
 `;
 
 export const CardLinkImage = styled.img`

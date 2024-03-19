@@ -4,8 +4,10 @@ import Headset from "../../../assets/images/headset.svg";
 import Section from "../../../components/Section";
 import { Cards } from "./style";
 import SolutionCard from "./solutionCard";
+import { useNavigate } from "react-router-dom";
 
 export default function Solutions({ referance }: SectionsProps) {
+  const navigate = useNavigate();
   return (
     <Section
       referance={referance}
@@ -21,7 +23,7 @@ export default function Solutions({ referance }: SectionsProps) {
           fornecer insights estratégicos e soluções práticas para os desafios
           específicos do seu negócio."
           image={Search}
-          click={() => console.log("consultoria")}
+          click={"consultoria-tecnologica"}
         />
         <SolutionCard
           title="Análise de Dados Profunda e Estratégica"
@@ -30,7 +32,7 @@ export default function Solutions({ referance }: SectionsProps) {
           estratégicos que orientam suas decisões de negócios e impulsionam
           o crescimento sustentável."
           image={Chart}
-          click={() => console.log("analise")}
+          click={"analise-de-dados"}
         />
         <SolutionCard
           title="Suporte Técnico Personalizado e Confiável"
@@ -40,7 +42,7 @@ export default function Solutions({ referance }: SectionsProps) {
           que você possa se concentrar no que faz de melhor: administrar seu
           negócio."
           image={Headset}
-          click={() => console.log("suporte")}
+          click={"suporte-tecnico"}
         />
         <SolutionCard
           title="Desenvolvimento Sob Medida de Soluções Tecnológicas"
@@ -50,7 +52,7 @@ export default function Solutions({ referance }: SectionsProps) {
           aqui para ajudá-lo a atingir seus objetivos de negócios com
           eficiência e excelência."
           image={Search}
-          click={() => console.log("desenvolvimento")}
+          click={"desenvolvimento"}
         />
       </Cards>
     </Section>

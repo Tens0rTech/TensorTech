@@ -7,10 +7,17 @@ import {
   ImpactTitle,
 } from "./style";
 
-export default function ImpactionSection({ referance }: SectionsProps) {
+type InspectionProps = SectionsProps & {
+  topRef?: React.MutableRefObject<any>;
+};
+
+export default function ImpactionSection({
+  topRef,
+  referance,
+}: InspectionProps) {
   const buttonWidth = window.innerWidth > 1366 ? "50%" : "75%";
   return (
-    <ImpactSection>
+    <ImpactSection ref={topRef}>
       <Container>
         <ImpactContent>
           <ImpactTitle>

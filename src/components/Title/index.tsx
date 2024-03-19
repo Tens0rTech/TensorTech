@@ -2,7 +2,7 @@ import { Context } from "./style";
 
 type TitleProps = {
   name: string;
-  whiteTitle: boolean;
+  whiteTitle?: boolean;
   fullWidth?: boolean;
 };
 

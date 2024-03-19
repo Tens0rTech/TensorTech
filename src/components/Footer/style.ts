@@ -44,6 +44,7 @@ export const Content = styled.div`
     &.social-medias {
       display: flex;
       flex-direction: row;
+      align-items: center;
     }
   }
 `;
