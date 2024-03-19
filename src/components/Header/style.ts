@@ -42,7 +42,9 @@ export const Spaced = styled.div`
   justify-content: space-between;
 `;
 
-export const Option = styled.a`
+export const Option = styled.button`
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   color: ${COLORS.PRIMARY};
   font-weight: ${FONT_WEIGHT.BOLD};

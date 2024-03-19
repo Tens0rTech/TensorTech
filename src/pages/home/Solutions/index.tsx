@@ -1,18 +1,8 @@
 import Search from "../../../assets/images/search.svg";
 import Chart from "../../../assets/images/chart.svg";
 import Headset from "../../../assets/images/headset.svg";
-import Laptop from "../../../assets/images/laptop.svg";
 import Section from "../../../components/Section";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardLink,
-  CardLinkImage,
-  CardTitle,
-  Cards,
-  ImageCard,
-} from "./style";
+import { Cards } from "./style";
 import SolutionCard from "./solutionCard";
 
 export default function Solutions() {

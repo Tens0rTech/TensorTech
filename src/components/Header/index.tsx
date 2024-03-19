@@ -24,10 +24,10 @@ export default function Header() {
             </ImageText>
           </Flex>
           <Spaced>
-            <Option id="solutions">Soluções</Option>
-            <Option id="about">Quem somos</Option>
-            <Option id="client">Clientes</Option>
-            <Option id="blog">Blog</Option>
+            <Option>Soluções</Option>
+            <Option>Quem somos</Option>
+            <Option>Clientes</Option>
+            <Option>Blog</Option>
             <Button width="148px" onClick={() => console.log("contato")}>
               CONTATO
             </Button>
