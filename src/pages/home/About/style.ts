@@ -23,6 +23,10 @@ export const AboutCards = styled.div`
   flex-direction: column;
   height: 618px;
   justify-content: space-between;
+
+  @media (max-width: 1400px) {
+    height: calc(618px * 0.7);
+  }
 `;
 
 export const CardNumber = styled.div<CardNumberProps>`
@@ -47,6 +51,20 @@ export const CardNumber = styled.div<CardNumberProps>`
     padding: 0 16px;
     text-align: center;
   }
+
+  @media (max-width: 1400px) {
+    width: calc(305px * 0.7);
+    height: ${({ little }) => (little ? `98px` : "148px")};
+
+    h3 {
+      font-size: calc(64px * 0.7);
+    }
+
+    p {
+      font-size: ${({ little }) => (little ? "14px" : "20px")};
+      padding: 0 16px;
+    }
+  }
 `;
 
 export const CardImage = styled.div<CardImageProps>`
@@ -54,4 +72,10 @@ export const CardImage = styled.div<CardImageProps>`
   height: ${({ tall }) => (tall ? "460px" : "390px")};
   border-radius: 30px;
   background: url(${({ image }) => image});
+
+  @media (max-width: 1400px) {
+    width: ${({ large }) => (large ? "440px" : "214px")};
+    height: ${({ tall }) => (tall ? "322px" : "274px")};
+    background-position: center right;
+  }
 `;

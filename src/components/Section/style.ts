@@ -19,6 +19,10 @@ export const Description = styled.p`
   padding: 24px 0;
   width: 90%;
   margin: 0 auto;
+
+  @media (max-width: 1400px) {
+    font-size: 16px;
+  }
 `;
 
 export const Children = styled.div`

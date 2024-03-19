@@ -31,7 +31,7 @@ export default function ImpactionSection({ referance }: SectionsProps) {
                 behavior: "smooth",
               })
             }
-            width="50%"
+            width={window.innerWidth > 1366 ? "50%" : "75%"}
           />
         </ImpactContent>
       </Container>

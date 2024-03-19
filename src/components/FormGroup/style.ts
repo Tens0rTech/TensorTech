@@ -20,6 +20,7 @@ export const InputGroup = styled.div`
   input,
   select,
   textarea {
+    width: calc(100% - 24px);
     outline: none;
     border: 1px solid black;
     border-radius: 10px;
@@ -35,6 +36,7 @@ export const InputGroup = styled.div`
     background-image: url(${Arrow});
     background-repeat: no-repeat;
     background-position: center right;
+    width: 100%;
   }
 
   textarea {

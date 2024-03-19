@@ -20,12 +20,22 @@ export const Content = styled.div`
     img {
       width: 58px;
     }
+
+    @media (max-width: 1400px) {
+      img {
+        width: 42px;
+      }
+    }
   }
 `;
 
 export const ImageFooter = styled.img`
   width: 230px;
   cursor: pointer;
+
+  @media (max-width: 1400px) {
+    width: calc(230px * 0.7);
+  }
 `;
 
 export const InfoItem = styled.div`
@@ -42,10 +52,25 @@ export const InfoItem = styled.div`
   p {
     font-size: 20px;
   }
+
+  @media (max-width: 1400px) {
+    img {
+      width: 42px;
+      height: 42px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
 `;
 
 export const LocationDesc = styled.p`
   margin-left: 78px;
   font-size: 14px;
   line-height: 26px;
+
+  @media (max-width: 1400px) {
+    margin-left: 62px;
+  }
 `;

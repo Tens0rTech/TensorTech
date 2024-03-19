@@ -17,7 +17,7 @@ export default function ContactSection({ referance }: SectionsProps) {
           })
         }
         secondary
-        width={"454px"}
+        width={window.innerWidth > 1366 ? "454px" : "318px"}
       />
     </BlueSection>
   );

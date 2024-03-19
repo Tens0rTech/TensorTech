@@ -16,6 +16,7 @@ export const ResumeImage = styled.div`
   width: 100%;
   height: 860px;
   background: url(${Office});
+  background-repeat: no-repeat;
 `;
 
 export const ResumeInfo = styled.div`
@@ -34,12 +35,20 @@ export const ResumeInfo = styled.div`
     padding: 2px 0;
     list-style-position: inside;
   }
+
+  @media (max-width: 1400px) {
+    font-size: 16px;
+  }
 `;
 
 export const TT = styled.p`
   font-weight: ${FONT_WEIGHT.SEMI_BOLD};
   font-size: 20px;
   color: ${COLORS.SECONDARY};
+
+  @media (max-width: 1400px) {
+    font-size: 18px;
+  }
 `;
 
 export const Title = styled.p`
@@ -47,4 +56,8 @@ export const Title = styled.p`
   font-size: 20px;
   padding: 18px 0;
   color: ${COLORS.PRIMARY};
+
+  @media (max-width: 1400px) {
+    font-size: 18px;
+  }
 `;

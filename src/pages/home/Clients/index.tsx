@@ -23,9 +23,13 @@ export default function Clients({ referance }: SectionsProps) {
     slidesToShow: 4,
     responsive: [
       {
-        breakpoint: 1366,
+        breakpoint: 1367,
         settings: {
           slidesToShow: 3,
+          dots: images.length > 3,
+          infinite: images.length > 3,
+          autoplay: images.length > 3,
+          slidesToScroll: images.length > 3 ? 1 : 3,
         },
       },
       {

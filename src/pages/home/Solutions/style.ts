@@ -6,6 +6,11 @@ export const Cards = styled.div`
   display: grid;
   grid-template-columns: 308px 308px 308px 308px;
   gap: 16px;
+
+  @media (max-width: 1400px) {
+    grid-template-columns: 50% 50%;
+    gap: 28px;
+  }
 `;
 
 export const Card = styled.div`
@@ -23,6 +28,10 @@ export const Card = styled.div`
 export const CardContent = styled.div`
   padding: 12px;
   height: 328px;
+
+  @media (max-width: 1400px) {
+    height: calc(328px * 0.7);
+  }
 `;
 
 export const ImageCard = styled.img`

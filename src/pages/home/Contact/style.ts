@@ -9,12 +9,24 @@ export const Flex = styled.div`
 
 export const Content = styled.div`
   width: 50%;
+
+  @media (max-width: 1400px) {
+    width: 40%;
+  }
+`;
+
+export const ContentForm = styled.div`
+  width: 60%;
 `;
 
 export const Title = styled.h3`
   font-size: 32px;
   font-weight: ${FONT_WEIGHT.BOLD};
   color: ${COLORS.PRIMARY};
+
+  @media (max-width: 1400px) {
+    font-size: 26px;
+  }
 `;
 
 export const Description = styled.p`
@@ -23,7 +35,7 @@ export const Description = styled.p`
 `;
 
 export const FormContainer = styled.form`
-  width: 630px;
+  width: 100%;
   border-radius: 30px;
   background-color: ${COLORS.WHITE};
 `;

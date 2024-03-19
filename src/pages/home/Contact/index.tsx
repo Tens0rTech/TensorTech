@@ -4,6 +4,7 @@ import Section from "../../../components/Section";
 import { COLORS } from "../../../theme";
 import {
   Content,
+  ContentForm,
   Description,
   Flex,
   FormContainer,
@@ -126,7 +127,7 @@ export default function Contact({ referance }: SectionsProps) {
             nossos especialistas irá atendê-lo.
           </Description>
         </Content>
-        <Content>
+        <ContentForm>
           <FormContainer
             onSubmit={(e) => {
               e.preventDefault();
@@ -216,7 +217,7 @@ export default function Contact({ referance }: SectionsProps) {
               />
             </FormDiv>
           </FormContainer>
-        </Content>
+        </ContentForm>
       </Flex>
     </Section>
   );
