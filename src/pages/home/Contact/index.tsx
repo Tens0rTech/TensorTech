@@ -21,6 +21,8 @@ import Radio from "../../../components/Radio";
 import { useMutation } from "@tanstack/react-query";
 import { createContact } from "../../../service/contact";
 import { ContactProps } from "../../../types/contact";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const [data, setData] = useState({
@@ -74,7 +76,6 @@ export default function Contact() {
       value: "telefonema",
     },
   ];
-
   function onSubmit() {
     if (data.phoneNumber.length < 15) {
       setErrors((err) => ({
@@ -98,6 +99,10 @@ export default function Contact() {
         contact: "whatsapp",
         message: "",
       });
+      toast.success("Contato enviado com sucesso");
+    },
+    onError: () => {
+      toast.error("Erro ao enviar contato, tente novamente");
     },
   });
 

@@ -5,6 +5,7 @@ import Input from "../../../components/Input";
 import { useMutation } from "@tanstack/react-query";
 import { createNewsletter } from "../../../service/newsletter";
 import { NewsBox } from "./style";
+import { toast } from "react-toastify";
 
 export default function Newsletter() {
   const [data, setData] = useState("");
@@ -19,6 +20,10 @@ export default function Newsletter() {
     mutationFn: () => createNewsletter(data),
     onSuccess: () => {
       setData("");
+      toast.success("Você foi inscrito com sucesso");
+    },
+    onError: () => {
+      toast.error("Erro ao se inscrever, tente novamente");
     },
   });
 
