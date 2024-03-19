@@ -8,8 +8,13 @@ export const Cards = styled.div`
   gap: 16px;
 
   @media (max-width: 1400px) {
-    grid-template-columns: 50% 50%;
-    gap: 28px;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+  }
+
+  @media (max-width: 950px) {
+    grid-template-columns: 100%;
+    gap: 18px;
   }
 `;
 
@@ -31,6 +36,10 @@ export const CardContent = styled.div`
 
   @media (max-width: 1400px) {
     height: calc(328px * 0.7);
+  }
+
+  @media (max-width: 950px) {
+    height: auto;
   }
 `;
 

@@ -14,7 +14,8 @@ export const Context = styled.button<ButtonProps>`
   transition: all 0.3s;
   font-size: 18px;
   text-align: center;
-  width: ${({ width }) => width ?? "fit-content"};
+  width: ${({ width }) =>
+    window.innerWidth > 950 ? width ?? "fit-content" : "100%"};
   opacity: ${({ loading }) => (loading ? 0.7 : 1)};
   display: flex;
   align-items: center;

@@ -7,6 +7,11 @@ export const Foot = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 `;
 
 export const Content = styled.div`
@@ -25,6 +30,20 @@ export const Content = styled.div`
       img {
         width: 42px;
       }
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 0px;
+      margin: 0 8px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 18px;
+
+    &.social-medias {
+      display: flex;
+      flex-direction: row;
     }
   }
 `;
@@ -61,6 +80,14 @@ export const InfoItem = styled.div`
 
     p {
       font-size: 16px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 8px;
+    img {
+      width: 32px;
+      height: 32px;
     }
   }
 `;

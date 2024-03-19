@@ -5,6 +5,10 @@ export const Flex = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
 `;
 
 export const Content = styled.div`
@@ -13,10 +17,20 @@ export const Content = styled.div`
   @media (max-width: 1400px) {
     width: 40%;
   }
+
+  @media (max-width: 950px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const ContentForm = styled.div`
   width: 60%;
+
+  @media (max-width: 950px) {
+    width: 100%;
+    margin-top: 32px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -32,6 +46,10 @@ export const Title = styled.h3`
 export const Description = styled.p`
   width: 75%;
   margin-top: 24px;
+
+  @media (max-width: 950px) {
+    width: 100%;
+  }
 `;
 
 export const FormContainer = styled.form`
@@ -49,6 +67,10 @@ export const FormContent = styled.div`
   gap: 18px;
   grid-template-columns: auto auto;
   padding-bottom: 22px;
+
+  @media (max-width: 500px) {
+    grid-template-columns: 100%;
+  }
 `;
 
 export const Privacy = styled.p`

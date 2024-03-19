@@ -3,7 +3,7 @@ import { COLORS } from "../../../theme";
 
 export const Dots = styled.div`
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 0;
 `;
 
 export const Dot = styled.ul`

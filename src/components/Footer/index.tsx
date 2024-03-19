@@ -39,7 +39,7 @@ export default function Footer() {
             </LocationDesc>
           </div>
         </Content>
-        <Content>
+        <Content className="social-medias">
           <a href="https://www.instagram.com/tensor.tech/" target="_blank">
             <img src={Instagram} />
           </a>

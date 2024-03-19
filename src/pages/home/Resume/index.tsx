@@ -6,7 +6,7 @@ export default function Resume({ referance }: SectionsProps) {
     <div ref={referance}>
       <Container>
         <Flex>
-          <Content>
+          <Content className="resume-image">
             <ResumeImage />
           </Content>
           <Content>

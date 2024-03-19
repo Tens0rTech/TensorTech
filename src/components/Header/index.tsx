@@ -3,13 +3,19 @@ import {
   Button,
   Flex,
   Head,
+  ImageLogo,
   ImageText,
+  Menu,
   Option,
+  Options,
   Spaced,
   TT,
   Tech,
 } from "./style";
 import logo from "../../assets/images/logo.svg";
+import { useState } from "react";
+import Hamburger from "../../assets/images/menu.svg";
+import Close from "../../assets/images/close.svg";
 
 type HeaderProps = {
   transparent?: boolean;
@@ -26,23 +32,37 @@ export default function Header({
   contactRef,
   resumeRef,
 }: HeaderProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <Head isTransparent={transparent}>
+    <Head isTransparent={window.innerWidth > 950 ? transparent : false}>
       <Container>
         <Spaced>
           <Flex
-            onClick={() => window.scrollTo(0, 0)}
+            onClick={() => {
+              setIsOpen(false);
+              window.scrollTo(0, 0);
+            }}
             style={{ cursor: "pointer" }}
           >
-            <img src={logo} alt="tensortech logo" width={100} />
+            <ImageLogo src={logo} alt="tensortech logo" />
             <ImageText>
               <TT>TENSORTECH</TT>
               <Tech>Tecnologia</Tech>
             </ImageText>
           </Flex>
-          <Spaced>
+          <Menu
+            src={!isOpen ? Hamburger : Close}
+            onClick={() => toggleMenu()}
+          />
+          <Options isOpen={isOpen}>
             <Option
               onClick={() => {
+                setIsOpen(false);
                 solutionsRef?.current.scrollIntoView({
                   behavior: "smooth",
                 });
@@ -52,6 +72,7 @@ export default function Header({
             </Option>
             <Option
               onClick={() => {
+                setIsOpen(false);
                 resumeRef?.current.scrollIntoView({
                   behavior: "smooth",
                 });
@@ -61,6 +82,7 @@ export default function Header({
             </Option>
             <Option
               onClick={() => {
+                setIsOpen(false);
                 clientsRef?.current.scrollIntoView({
                   behavior: "smooth",
                 });
@@ -72,6 +94,7 @@ export default function Header({
             <Button
               width="148px"
               onClick={() => {
+                setIsOpen(false);
                 contactRef?.current.scrollIntoView({
                   behavior: "smooth",
                 });
@@ -79,7 +102,7 @@ export default function Header({
             >
               CONTATO
             </Button>
-          </Spaced>
+          </Options>
         </Spaced>
       </Container>
     </Head>

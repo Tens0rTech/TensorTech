@@ -8,6 +8,7 @@ import {
 } from "./style";
 
 export default function ImpactionSection({ referance }: SectionsProps) {
+  const buttonWidth = window.innerWidth > 1366 ? "50%" : "75%";
   return (
     <ImpactSection>
       <Container>
@@ -16,13 +17,8 @@ export default function ImpactionSection({ referance }: SectionsProps) {
             Transforme sua Empresa com Soluções Tecnológicas de Ponta.
           </ImpactTitle>
           <ImpactDescription>
-            Somos referência em análise de dados,
-            <br />
-            suporte técnico personalizado e
-            <br />
-            desenvolvimento sob medida para empresas
-            <br />
-            de médio Porte.
+            Somos referência em análise de dados, suporte técnico personalizado
+            e desenvolvimento sob medida para empresas de médio Porte.
           </ImpactDescription>
           <Button
             title="conheça nosso serviços"
@@ -31,7 +27,7 @@ export default function ImpactionSection({ referance }: SectionsProps) {
                 behavior: "smooth",
               })
             }
-            width={window.innerWidth > 1366 ? "50%" : "75%"}
+            width={buttonWidth}
           />
         </ImpactContent>
       </Container>

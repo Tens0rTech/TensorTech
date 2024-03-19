@@ -4,7 +4,7 @@ import Button from "../../../components/Button";
 import Input from "../../../components/Input";
 import { useMutation } from "@tanstack/react-query";
 import { createNewsletter } from "../../../service/newsletter";
-import { NewsBox } from "./style";
+import { NewsBox, Subscribe } from "./style";
 import { toast } from "react-toastify";
 
 export default function Newsletter() {
@@ -33,7 +33,7 @@ export default function Newsletter() {
         title="Inscreva-se em nossa newsletter"
         description="e receba as principais tendências em tecnologia."
       >
-        <div style={{ width: 410 }}>
+        <Subscribe>
           <Input
             value={data}
             onChange={(e) => setData(e.target.value)}
@@ -48,7 +48,7 @@ export default function Newsletter() {
             click={() => onSubmit()}
             loading={createNewsletterMutation.isPending}
           />
-        </div>
+        </Subscribe>
       </BlueSection>
     </NewsBox>
   );

@@ -33,9 +33,13 @@ export default function Clients({ referance }: SectionsProps) {
         },
       },
       {
-        breakpoint: 896,
+        breakpoint: 951,
         settings: {
           slidesToShow: 1,
+          dots: true,
+          infinite: true,
+          autoplay: true,
+          slidesToScroll: 1,
         },
       },
     ],

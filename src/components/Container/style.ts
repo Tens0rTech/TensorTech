@@ -7,4 +7,8 @@ export const Box = styled.div`
   @media (max-width: 1400px) {
     width: calc(1280px * 0.7);
   }
+
+  @media (max-width: 950px) {
+    width: 95%;
+  }
 `;

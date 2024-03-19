@@ -16,6 +16,11 @@ export const Flex = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const AboutCards = styled.div`
@@ -26,6 +31,11 @@ export const AboutCards = styled.div`
 
   @media (max-width: 1400px) {
     height: calc(618px * 0.7);
+  }
+
+  @media (max-width: 950px) {
+    height: auto;
+    width: 100%;
   }
 `;
 
@@ -65,6 +75,11 @@ export const CardNumber = styled.div<CardNumberProps>`
       padding: 0 16px;
     }
   }
+
+  @media (max-width: 950px) {
+    width: 100%;
+    margin-bottom: 18px;
+  }
 `;
 
 export const CardImage = styled.div<CardImageProps>`
@@ -77,5 +92,9 @@ export const CardImage = styled.div<CardImageProps>`
     width: ${({ large }) => (large ? "440px" : "214px")};
     height: ${({ tall }) => (tall ? "322px" : "274px")};
     background-position: center right;
+  }
+
+  @media (max-width: 950px) {
+    display: none;
   }
 `;

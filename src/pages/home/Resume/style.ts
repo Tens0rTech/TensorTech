@@ -10,6 +10,14 @@ export const Flex = styled.div`
 
 export const Content = styled.div`
   width: 49%;
+
+  @media (max-width: 950px) {
+    width: 100%;
+    padding: 48px 0;
+    &.resume-image {
+      display: none;
+    }
+  }
 `;
 
 export const ResumeImage = styled.div`
@@ -17,6 +25,10 @@ export const ResumeImage = styled.div`
   height: 860px;
   background: url(${Office});
   background-repeat: no-repeat;
+
+  @media (max-width: 950px) {
+    display: none;
+  }
 `;
 
 export const ResumeInfo = styled.div`

@@ -43,7 +43,7 @@ export default function About() {
             color={COLORS.SECONDARY}
             number={5}
             text="apaixonados por tecnologia"
-            little
+            little={window.innerWidth < 950}
           />
         </AboutCards>
       </Flex>

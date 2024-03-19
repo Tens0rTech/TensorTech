@@ -5,3 +5,11 @@ export const NewsBox = styled.div`
   width: 100%;
   border-bottom: 2px solid ${COLORS.WHITE};
 `;
+
+export const Subscribe = styled.div`
+  width: 45%;
+
+  @media (max-width: 950px) {
+    width: 100%;
+  }
+`;

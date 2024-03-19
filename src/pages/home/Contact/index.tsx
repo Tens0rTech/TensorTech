@@ -212,7 +212,7 @@ export default function Contact({ referance }: SectionsProps) {
               <Button
                 title="Enviar"
                 type="submit"
-                width="45%"
+                width={"45%"}
                 loading={onSubmitMutation.isPending}
               />
             </FormDiv>
