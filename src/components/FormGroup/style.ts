@@ -6,7 +6,8 @@ export const InputGroup = styled.div`
   display: flex;
   flex-direction: column;
 
-  label {
+  label,
+  span {
     font-size: 14px;
     font-weight: ${FONT_WEIGHT.BOLD};
     color: ${COLORS.PRIMARY};

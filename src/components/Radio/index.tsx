@@ -17,10 +17,10 @@ export default function Radio({
 }: RadioProps) {
   return (
     <FormGroup>
-      <h5>
+      <span>
         {label}
         {required && " *"}
-      </h5>
+      </span>
       {options.map((opt, index) => (
         <RadioBox>
           <input

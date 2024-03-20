@@ -74,6 +74,7 @@ export default function Header({
             <>
               <Menu
                 src={!isOpen ? Hamburger : Close}
+                alt="menu"
                 onClick={() => toggleMenu()}
               />
               <Options isOpen={isOpen}>
