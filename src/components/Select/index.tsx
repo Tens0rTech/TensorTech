@@ -16,11 +16,12 @@ export default function Select({
 }: SelectProps) {
   return (
     <FormGroup>
-      <h5>
+      <label htmlFor={label}>
         {label}
         {required && " *"}
-      </h5>
+      </label>
       <select
+        id={label}
         value={value}
         onChange={(e) => onChange(e)}
         required={required}

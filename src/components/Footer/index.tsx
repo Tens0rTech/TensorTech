@@ -15,6 +15,7 @@ export default function Footer({ referance }: SectionsProps) {
       <Foot>
         <ImageFooter
           src={Logo}
+          alt="tensortench logo"
           onClick={() =>
             referance?.current.scrollIntoView({
               behavior: "smooth",
@@ -23,16 +24,16 @@ export default function Footer({ referance }: SectionsProps) {
         />
         <Content>
           <InfoItem>
-            <img src={Phone} />
+            <img src={Phone} alt="phone" />
             <p>+55 (27) 99798-2440</p>
           </InfoItem>
           <InfoItem>
-            <img src={Mail} />
+            <img src={Mail} alt="mail" />
             <p>contato@tensortech.com.br</p>
           </InfoItem>
           <div>
             <InfoItem>
-              <img src={Location} />
+              <img src={Location} alt="pin-location" />
               <p>Localidade:</p>
             </InfoItem>
             <LocationDesc>
@@ -48,16 +49,16 @@ export default function Footer({ referance }: SectionsProps) {
         </Content>
         <Content className="social-medias">
           <a href="https://www.instagram.com/tensor.tech/" target="_blank">
-            <img src={Instagram} />
+            <img src={Instagram} alt="Instagram" />
           </a>
           <a
             href="https://www.linkedin.com/company/tensortech-tecnologia/"
             target="_blank"
           >
-            <img src={Linkedin} />
+            <img src={Linkedin} alt="Linkedin" />
           </a>
           <a href="https://www.youtube.com/" target="_blank">
-            <img src={YouTube} />
+            <img src={YouTube} alt="YouTube" />
           </a>
         </Content>
       </Foot>

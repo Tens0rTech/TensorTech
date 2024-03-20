@@ -13,12 +13,13 @@ export default function Input({
   return (
     <FormGroup>
       {label && (
-        <h5>
+        <label htmlFor={label}>
           {label}
           {required && " *"}
-        </h5>
+        </label>
       )}
       <input
+        id={label}
         type={type}
         placeholder={placeholder}
         value={value}

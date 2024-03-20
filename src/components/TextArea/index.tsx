@@ -11,11 +11,12 @@ export default function TextArea({
 }: InputProps) {
   return (
     <FormGroup>
-      <h5>
+      <label htmlFor={label}>
         {label}
         {required && " *"}
-      </h5>
+      </label>
       <textarea
+        id={label}
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange(e)}
