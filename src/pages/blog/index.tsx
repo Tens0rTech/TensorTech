@@ -18,6 +18,7 @@ export default function Blog() {
           src={Soon}
           alt="em construção"
           style={{ width: "60%", margin: "0 auto", display: "flex" }}
+          loading="lazy"
         />
       </ContentText>
       <Newsletter />

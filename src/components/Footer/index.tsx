@@ -21,19 +21,20 @@ export default function Footer({ referance }: SectionsProps) {
               behavior: "smooth",
             })
           }
+          loading="lazy"
         />
         <Content>
           <InfoItem>
-            <img src={Phone} alt="phone" />
+            <img src={Phone} alt="phone" loading="lazy" />
             <p>+55 (27) 99798-2440</p>
           </InfoItem>
           <InfoItem>
-            <img src={Mail} alt="mail" />
+            <img src={Mail} alt="mail" loading="lazy" />
             <p>contato@tensortech.com.br</p>
           </InfoItem>
           <div>
             <InfoItem>
-              <img src={Location} alt="pin-location" />
+              <img src={Location} alt="pin-location" loading="lazy" />
               <p>Localidade:</p>
             </InfoItem>
             <LocationDesc>
@@ -49,16 +50,16 @@ export default function Footer({ referance }: SectionsProps) {
         </Content>
         <Content className="social-medias">
           <a href="https://www.instagram.com/tensor.tech/" target="_blank">
-            <img src={Instagram} alt="Instagram" />
+            <img src={Instagram} alt="Instagram" loading="lazy" />
           </a>
           <a
             href="https://www.linkedin.com/company/tensortech-tecnologia/"
             target="_blank"
           >
-            <img src={Linkedin} alt="Linkedin" />
+            <img src={Linkedin} alt="Linkedin" loading="lazy" />
           </a>
           <a href="https://www.youtube.com/" target="_blank">
-            <img src={YouTube} alt="YouTube" />
+            <img src={YouTube} alt="YouTube" loading="lazy" />
           </a>
         </Content>
       </Foot>

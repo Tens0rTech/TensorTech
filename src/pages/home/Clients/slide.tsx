@@ -10,7 +10,7 @@ export default function Slide({ props, image }: SlideProps) {
 
   return (
     <SlideContainer {...otherProps}>
-      <img src={image} alt={image} />
+      <img src={image} alt={image} loading="lazy" />
     </SlideContainer>
   );
 }

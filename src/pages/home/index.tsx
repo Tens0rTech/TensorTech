@@ -31,7 +31,7 @@ export default function Home() {
       <ImpactionSection topRef={topRef} referance={contactRef} />
       <Solutions referance={solutionsRef} />
       <About />
-      {/* <Clients referance={clientsRef} /> */}
+      <Clients referance={clientsRef} />
       <ContactSection referance={contactRef} />
       <Resume referance={resumeRef} />
       <BlogSection />

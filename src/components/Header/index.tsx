@@ -64,7 +64,7 @@ export default function Header({
             }}
             style={{ cursor: "pointer" }}
           >
-            <ImageLogo src={logo} alt="tensortech logo" />
+            <ImageLogo src={logo} alt="tensortech logo" loading="lazy" />
             <ImageText>
               <TT>TENSORTECH</TT>
               <Tech>Tecnologia</Tech>
@@ -76,6 +76,7 @@ export default function Header({
                 src={!isOpen ? Hamburger : Close}
                 alt="menu"
                 onClick={() => toggleMenu()}
+                loading="lazy"
               />
               <Options isOpen={isOpen}>
                 <Option

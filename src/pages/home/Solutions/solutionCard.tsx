@@ -25,13 +25,13 @@ export default function SolutionCard({
   return (
     <Card>
       <CardContent>
-        <ImageCard src={image} alt={title} />
+        <ImageCard src={image} alt={title} loading="lazy" />
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardContent>
       <CardLink to={click} target="_blank">
         SAIBA MAIS
-        <CardLinkImage src={Arrow} alt={"arrow"} />
+        <CardLinkImage src={Arrow} alt={"arrow"} loading="lazy" />
       </CardLink>
     </Card>
   );

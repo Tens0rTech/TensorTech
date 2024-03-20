@@ -36,7 +36,7 @@ export default function BlueSection({
               />
             )}
           </Section>
-          {!image ? children : <ImageSection src={image} />}
+          {!image ? children : <ImageSection src={image} loading="lazy" />}
         </Flex>
       </Container>
     </Content>
