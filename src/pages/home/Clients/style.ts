@@ -24,4 +24,8 @@ export const Dot = styled.ul`
 export const SlideContainer = styled.div`
   display: flex;
   justify-content: center;
+
+  img {
+    width: 90%;
+  }
 `;

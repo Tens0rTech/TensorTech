@@ -2,10 +2,10 @@ import Section from "../../../components/Section";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import KeK from "../../../assets/images/carousel/kek.svg";
-import Orletti from "../../../assets/images/carousel/orletti.svg";
-import Unimed from "../../../assets/images/carousel/unimed.svg";
-import Mondiale from "../../../assets/images/carousel/mondiale.svg";
+import KeK from "../../../assets/images/carousel/kek.png";
+import Orletti from "../../../assets/images/carousel/orletti.png";
+import Unimed from "../../../assets/images/carousel/unimed.png";
+import Mondiale from "../../../assets/images/carousel/mondiale.png";
 import { Dot, Dots } from "./style";
 import Slide from "./slide";
 
