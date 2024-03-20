@@ -3,8 +3,13 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Newsletter from "../home/Newsletter";
 import Soon from "../../assets/images/building.png";
+import { useEffect } from "react";
 
 export default function Blog() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Header notMenu />

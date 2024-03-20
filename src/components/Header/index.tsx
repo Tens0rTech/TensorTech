@@ -107,7 +107,7 @@ export default function Header({
                 >
                   Clientes
                 </Option>
-                <Option>Blog</Option>
+                <Option onClick={() => navigate("blog")}>Blog</Option>
                 <Button
                   width="148px"
                   onClick={() => {
