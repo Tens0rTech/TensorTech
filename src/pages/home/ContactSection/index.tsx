@@ -17,7 +17,7 @@ export default function ContactSection({ referance }: SectionsProps) {
           })
         }
         secondary
-        width={buttonWidth}
+        width={"50%"}
       />
     </BlueSection>
   );
