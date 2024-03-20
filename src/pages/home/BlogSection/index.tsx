@@ -1,5 +1,5 @@
 import BlueSection from "../../../components/BlueSection";
-import BlogImage from "../../../assets/images/blogimage.png";
+import BlogImage from "../../../assets/images/blogimage.webp";
 import { useNavigate } from "react-router-dom";
 
 export default function BlogSection() {

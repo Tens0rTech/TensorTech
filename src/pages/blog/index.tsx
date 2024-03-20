@@ -2,7 +2,7 @@ import ContentText from "../../components/ContentText";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Newsletter from "../home/Newsletter";
-import Soon from "../../assets/images/building.png";
+import Soon from "../../assets/images/building.webp";
 import { useEffect } from "react";
 
 export default function Blog() {

@@ -2,9 +2,9 @@ import Section from "../../../components/Section";
 import { COLORS } from "../../../theme";
 import AboutCard from "./aboutCard";
 import { AboutCards, CardImage, Flex } from "./style";
-import Desktop from "../../../assets/images/desktop.png";
-import Work from "../../../assets/images/work.png";
-import Highfive from "../../../assets/images/highfive.png";
+import Desktop from "../../../assets/images/desktop.webp";
+import Work from "../../../assets/images/work.webp";
+import Highfive from "../../../assets/images/highfive.webp";
 
 export default function About() {
   return (

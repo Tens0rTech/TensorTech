@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import Office from "../../../assets/images/office.png";
+import Office from "../../../assets/images/office.webp";
 import { COLORS, FONT_WEIGHT } from "../../../theme";
 
 export const Flex = styled.div`
