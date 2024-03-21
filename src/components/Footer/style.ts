@@ -26,7 +26,7 @@ export const Content = styled.div`
       width: 58px;
     }
 
-    @media (max-width: 1400px) {
+    @media (max-width: 1370px) {
       img {
         width: 42px;
       }
@@ -53,7 +53,7 @@ export const ImageFooter = styled.img`
   width: 230px;
   cursor: pointer;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     width: calc(230px * 0.7);
   }
 `;
@@ -73,7 +73,7 @@ export const InfoItem = styled.div`
     font-size: 20px;
   }
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     img {
       width: 42px;
       height: 42px;
@@ -98,7 +98,7 @@ export const LocationDesc = styled.p`
   font-size: 14px;
   line-height: 26px;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     margin-left: 62px;
   }
 `;

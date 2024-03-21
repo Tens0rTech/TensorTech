@@ -45,10 +45,7 @@ export default function Header({
   };
 
   return (
-    <Head
-      isTransparent={window.innerWidth > 950 ? transparent : false}
-      notMenu={notMenu}
-    >
+    <Head isTransparent={transparent} notMenu={notMenu}>
       <Container>
         <Spaced>
           <Flex

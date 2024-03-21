@@ -20,7 +20,7 @@ export const Description = styled.p`
   width: 90%;
   margin: 0 auto;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     font-size: 16px;
   }
 `;

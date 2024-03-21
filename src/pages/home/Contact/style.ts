@@ -6,7 +6,7 @@ export const Flex = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
   }
 `;
@@ -14,11 +14,11 @@ export const Flex = styled.div`
 export const Content = styled.div`
   width: 50%;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     width: 40%;
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     width: 100%;
     text-align: center;
   }
@@ -27,7 +27,7 @@ export const Content = styled.div`
 export const ContentForm = styled.div`
   width: 60%;
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     width: 100%;
     margin-top: 32px;
   }
@@ -38,7 +38,7 @@ export const Title = styled.h3`
   font-weight: ${FONT_WEIGHT.BOLD};
   color: ${COLORS.PRIMARY};
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     font-size: 26px;
   }
 `;
@@ -47,7 +47,7 @@ export const Description = styled.p`
   width: 75%;
   margin-top: 24px;
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     width: 100%;
   }
 `;

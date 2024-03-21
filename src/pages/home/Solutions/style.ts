@@ -8,12 +8,12 @@ export const Cards = styled.div`
   grid-template-columns: 308px 308px 308px 308px;
   gap: 16px;
 
-  @media (max-width: 1400px) {
-    grid-template-columns: 48% 48%;
-    gap: 4%;
+  @media (max-width: 1370px) {
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 1%;
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     grid-template-columns: 100%;
     gap: 18px;
   }
@@ -35,11 +35,7 @@ export const CardContent = styled.div`
   padding: 12px;
   height: 328px;
 
-  @media (max-width: 1400px) {
-    height: calc(328px * 0.7);
-  }
-
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     height: auto;
   }
 `;
@@ -58,6 +54,10 @@ export const CardTitle = styled.p`
 export const CardDescription = styled.p`
   line-height: 24px;
   font-size: 14px;
+
+  @media (max-width: 1370px) {
+    line-height: normal;
+  }
 `;
 
 export const CardLink = styled(Link)`

@@ -11,13 +11,13 @@ export const ImpactSection = styled.div`
   background-position: center top;
   background-size: cover;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     height: calc(900px * 0.7);
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     background-image: url(${backgroundMobile});
-    background-position: center left;
+    background-position: left top;
     padding-top: 78px;
     height: auto;
   }
@@ -29,13 +29,13 @@ export const ImpactContent = styled.div`
   position: absolute;
   margin-top: 320px;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     width: calc(650px * 0.7);
     height: calc(500px * 0.7);
     margin-top: calc(320px * 0.7);
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     width: 100%;
     margin-top: 0px;
     padding: 120px 0;
@@ -50,11 +50,11 @@ export const ImpactTitle = styled.p`
   font-size: 38px;
   font-weight: ${FONT_WEIGHT.SEMI_BOLD};
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     font-size: calc(38px * 0.7);
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     width: 100%;
   }
 `;
@@ -64,12 +64,12 @@ export const ImpactDescription = styled.p`
   font-size: 18px;
   width: 65%;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     font-size: 16px;
     width: 80%;
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     width: 100%;
   }
 `;

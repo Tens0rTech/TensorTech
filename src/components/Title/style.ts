@@ -13,7 +13,7 @@ export const Context = styled.p<ContextProps>`
   font-weight: ${FONT_WEIGHT.BOLD};
   color: ${({ whiteTitle }) => (!whiteTitle ? COLORS.PRIMARY : COLORS.WHITE)};
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     font-size: 26px;
   }
 `;

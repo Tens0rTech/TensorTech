@@ -11,7 +11,7 @@ export const Flex = styled.div`
 export const Content = styled.div`
   width: 49%;
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     width: 100%;
     padding: 48px 0;
     &.resume-image {
@@ -26,7 +26,7 @@ export const ResumeImage = styled.div`
   background: url(${Office});
   background-repeat: no-repeat;
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     display: none;
   }
 `;
@@ -48,7 +48,7 @@ export const ResumeInfo = styled.div`
     list-style-position: inside;
   }
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     font-size: 16px;
   }
 `;
@@ -58,7 +58,7 @@ export const TT = styled.p`
   font-size: 20px;
   color: ${COLORS.SECONDARY};
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     font-size: 18px;
   }
 `;
@@ -69,7 +69,7 @@ export const Title = styled.p`
   padding: 18px 0;
   color: ${COLORS.PRIMARY};
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1370px) {
     font-size: 18px;
   }
 `;

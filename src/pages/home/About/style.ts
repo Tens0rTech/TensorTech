@@ -17,7 +17,7 @@ export const Flex = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
     align-items: center;
   }
@@ -29,11 +29,11 @@ export const AboutCards = styled.div`
   height: 618px;
   justify-content: space-between;
 
-  @media (max-width: 1400px) {
-    height: calc(618px * 0.7);
+  @media (max-width: 1370px) {
+    height: calc(618px * 0.86);
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     height: auto;
     width: 100%;
   }
@@ -62,9 +62,9 @@ export const CardNumber = styled.div<CardNumberProps>`
     text-align: center;
   }
 
-  @media (max-width: 1400px) {
-    width: calc(305px * 0.7);
-    height: ${({ little }) => (little ? `98px` : "148px")};
+  @media (max-width: 1370px) {
+    width: 262px;
+    height: ${({ little }) => (little ? `120px` : "180px")};
 
     h3 {
       font-size: calc(64px * 0.7);
@@ -76,7 +76,7 @@ export const CardNumber = styled.div<CardNumberProps>`
     }
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     width: 100%;
     margin-bottom: 18px;
   }
@@ -88,13 +88,13 @@ export const CardImage = styled.div<CardImageProps>`
   border-radius: 30px;
   background: url(${({ image }) => image});
 
-  @media (max-width: 1400px) {
-    width: ${({ large }) => (large ? "440px" : "214px")};
-    height: ${({ tall }) => (tall ? "322px" : "274px")};
+  @media (max-width: 1370px) {
+    width: ${({ large }) => (large ? "542px" : "262px")};
+    height: ${({ tall }) => (tall ? "396px" : "335px")};
     background-position: center right;
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     display: none;
   }
 `;

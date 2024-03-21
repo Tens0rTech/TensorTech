@@ -15,10 +15,11 @@ export const Head = styled.div<HeadProps>`
   width: 100%;
   padding: 2px 0;
   background-color: ${({ isTransparent }) =>
-    isTransparent ? "transparent" : COLORS.GRAY};
-  position: ${({ isTransparent }) => (isTransparent ? "absolute" : "static")};
+    isTransparent ? "rgba(255,255,255,0.7)" : COLORS.GRAY};
+  position: ${({ isTransparent }) => (isTransparent ? "fixed" : "static")};
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
+    background-color: ${COLORS.GRAY};
     position: ${({ notMenu }) => (!notMenu ? "fixed" : "static")};
     z-index: 999;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
@@ -33,7 +34,7 @@ export const Flex = styled.div`
 export const ImageLogo = styled.img`
   width: 100px;
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     width: 80px;
     height: 74px;
   }
@@ -67,7 +68,7 @@ export const Options = styled.div<OptionsProp>`
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     margin-top: 78px;
     z-index: 999;
     position: fixed;
@@ -98,7 +99,7 @@ export const Option = styled.button`
     border-bottom: 2px solid ${COLORS.PRIMARY};
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     width: 100%;
     border-bottom: 1px solid ${COLORS.GRAY};
     padding: 18px 0;
@@ -113,7 +114,7 @@ export const Option = styled.button`
 export const Button = styled(Context)`
   margin-left: 12px;
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     margin-left: 0px;
     margin-top: 18px;
     width: 95%;
@@ -126,7 +127,7 @@ export const Menu = styled.img`
     brightness(92%) contrast(92%);
   display: none;
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     display: block;
   }
 `;
