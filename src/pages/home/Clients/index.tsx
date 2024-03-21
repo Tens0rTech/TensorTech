@@ -54,7 +54,7 @@ export default function Clients({ referance }: SectionsProps) {
   return (
     <Section
       referance={referance}
-      title="algum dos nossos clientes"
+      title="alguns dos nossos clientes"
       description="Na TENSORTECH, acreditamos no relacionamento duradouro, de transparência e confiança."
     >
       <div style={{ padding: "32px 0" }}>
