@@ -6,11 +6,12 @@ import KeK from "../../../assets/images/carousel/kek.png";
 import Orletti from "../../../assets/images/carousel/orletti.png";
 import Unimed from "../../../assets/images/carousel/unimed.png";
 import Mondiale from "../../../assets/images/carousel/mondiale.png";
+import Geoplan from "../../../assets/images/carousel/geoplan.png";
 import { Dot, Dots } from "./style";
 import Slide from "./slide";
 
 export default function Clients({ referance }: SectionsProps) {
-  const images = [KeK, Orletti, Unimed, Mondiale];
+  const images = [KeK, Orletti, Unimed, Mondiale, Geoplan];
 
   const settings = {
     dots: images.length > 4,

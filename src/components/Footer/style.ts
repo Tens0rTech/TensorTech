@@ -102,3 +102,12 @@ export const LocationDesc = styled.p`
     margin-left: 62px;
   }
 `;
+
+export const CopyRight = styled.p`
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  background-color: ${COLORS.LIGHT_BLUE};
+  color: ${COLORS.WHITE};
+  padding: 4px 0;
+`;
