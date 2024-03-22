@@ -1,7 +1,7 @@
 user-agent: *
 disallow: /downloads/
-
-user-agent: *
 disallow: /uploads/
-
-sitemap: https://tensortech.netlify.app/
+disallow: /admin
+disallow: /checkout
+allow: /static/
+allow: /
