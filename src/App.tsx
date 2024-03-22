@@ -13,14 +13,14 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <ToastContainer
-        position="bottom-right"
-        theme="colored"
-        hideProgressBar
-        autoClose={3000}
-      />
-      <BrowserRouter>
+    <BrowserRouter>
+      <QueryClientProvider client={queryClient}>
+        <ToastContainer
+          position="bottom-right"
+          theme="colored"
+          hideProgressBar
+          autoClose={3000}
+        />
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/politica-privacidade" Component={Privacy} />
@@ -31,8 +31,8 @@ function App() {
           <Route path="/blog" Component={Blog} />
           <Route path="*" Component={Home} />
         </Routes>
-      </BrowserRouter>
-    </QueryClientProvider>
+      </QueryClientProvider>
+    </BrowserRouter>
   );
 }
 
