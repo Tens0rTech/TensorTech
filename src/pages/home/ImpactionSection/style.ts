@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import { FONT_WEIGHT } from "../../../theme";
-import background from "../../../assets/images/background.png";
-import backgroundMobile from "../../../assets/images/backgroundMobile.png";
+import background from "../../../assets/images/background.webp";
+import backgroundMobile from "../../../assets/images/backgroundMobile.webp";
 
 export const ImpactSection = styled.div`
   width: 100%;
