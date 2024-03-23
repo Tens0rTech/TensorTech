@@ -23,7 +23,7 @@ export default function Solutions({ referance }: SectionsProps) {
           fornecer insights estratégicos e soluções práticas para os desafios
           específicos do seu negócio."
           image={Search}
-          click={"consultoria-tecnologica"}
+          click={"/consultoria-tecnologica"}
         />
         <SolutionCard
           title="Análise de Dados Profunda e Estratégica"
@@ -32,7 +32,7 @@ export default function Solutions({ referance }: SectionsProps) {
           estratégicos que orientam suas decisões de negócios e impulsionam
           o crescimento sustentável."
           image={Chart}
-          click={"analise-de-dados"}
+          click={"/analise-de-dados"}
         />
         <SolutionCard
           title="Suporte Técnico Personalizado e Confiável"
@@ -42,7 +42,7 @@ export default function Solutions({ referance }: SectionsProps) {
           que você possa se concentrar no que faz de melhor: administrar seu
           negócio."
           image={Headset}
-          click={"suporte-tecnico"}
+          click={"/suporte-tecnico"}
         />
         <SolutionCard
           title="Desenvolvimento Sob Medida de Soluções Tecnológicas"
@@ -52,7 +52,7 @@ export default function Solutions({ referance }: SectionsProps) {
           aqui para ajudá-lo a atingir seus objetivos de negócios com
           eficiência e excelência."
           image={Search}
-          click={"desenvolvimento"}
+          click={"/desenvolvimento"}
         />
       </Cards>
     </Section>
