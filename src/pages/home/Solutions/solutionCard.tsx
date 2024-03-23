@@ -29,7 +29,7 @@ export default function SolutionCard({
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardContent>
-      <CardLink to={click} target="_blank">
+      <CardLink to={click}>
         SAIBA MAIS
         <CardLinkImage src={Arrow} alt={"arrow"} loading="lazy" />
       </CardLink>
