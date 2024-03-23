@@ -60,7 +60,7 @@ export const CardDescription = styled.p`
   }
 `;
 
-export const CardLink = styled(Link)`
+export const CardLink = styled.a`
   color: ${COLORS.SECONDARY};
   cursor: pointer;
   display: flex;
