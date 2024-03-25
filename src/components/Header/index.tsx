@@ -75,7 +75,7 @@ export default function Header({
                 onClick={() => toggleMenu()}
                 loading="lazy"
               />
-              <Options isOpen={isOpen}>
+              <Options isOpen={isOpen} isTransparent={transparent}>
                 <Option
                   onClick={() => {
                     setIsOpen(false);

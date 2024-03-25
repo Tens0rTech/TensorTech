@@ -7,7 +7,7 @@ type HeadProps = {
   notMenu?: boolean;
 };
 
-type OptionsProp = {
+type OptionsProp = HeadProps & {
   isOpen?: boolean;
 };
 
@@ -15,12 +15,11 @@ export const Head = styled.div<HeadProps>`
   width: 100%;
   padding: 2px 0;
   background-color: ${({ isTransparent }) =>
-    isTransparent ? "rgba(255,255,255,0.7)" : COLORS.GRAY};
+    isTransparent ? "rgba(255,255,255,0.8)" : COLORS.GRAY};
   position: ${({ isTransparent }) => (isTransparent ? "fixed" : "static")};
   z-index: 999;
 
   @media (max-width: 1100px) {
-    background-color: ${COLORS.GRAY};
     position: ${({ notMenu }) => (!notMenu ? "fixed" : "static")};
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
   }
@@ -77,7 +76,8 @@ export const Options = styled.div<OptionsProp>`
     top: 0;
     width: 60%;
     height: calc(100% - 78px);
-    background-color: ${COLORS.WHITE};
+    background-color: ${({ isTransparent }) =>
+      isTransparent ? "rgba(255,255,255,0.8)" : COLORS.GRAY};
     justify-content: flex-start;
     box-shadow: -1px 0px 3px 0px rgba(0, 0, 0, 0.5);
     margin-right: ${({ isOpen }) => (isOpen ? "0px" : "-900px")};
