@@ -9,7 +9,7 @@ export default function Consultancy() {
       <Header notMenu />
       <ContentText title="Consultoria Tecnológica Personalizada">
         <p>
-          Na tensortech, entendemos que cada empresa é única e enfrenta desafios
+          Na Tensortech, entendemos que cada empresa é única e enfrenta desafios
           tecnológicos específicos. É por isso que oferecemos consultoria
           tecnológica personalizada, adaptada às necessidades individuais de
           cada empresa de médio porte que busca otimizar sua infraestrutura e
@@ -62,7 +62,7 @@ export default function Consultancy() {
           </ul>
         </p>
         <p>
-          Por que Escolher a tensortech para sua Consultoria Tecnológica:
+          Por que Escolher a Tensortech para sua Consultoria Tecnológica:
           <ul>
             <li>
               Experiência Comprovada: Com mais de 10 anos de experiência, somos

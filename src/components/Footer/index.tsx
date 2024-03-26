@@ -72,7 +72,7 @@ export default function Footer({ referance }: SectionsProps) {
           </Content>
         </Foot>
       </Section>
-      <CopyRight>© 2024 TensorTech. Todos os direitos reservados.</CopyRight>
+      <CopyRight>© 2024 Tensortech. Todos os direitos reservados.</CopyRight>
     </>
   );
 }

@@ -9,7 +9,7 @@ export default function Support() {
       <Header notMenu />
       <ContentText title="Suporte Técnico Personalizado e Confiável">
         <p>
-          Na tensortech, entendemos que a estabilidade e eficiência dos seus
+          Na Tensortech, entendemos que a estabilidade e eficiência dos seus
           sistemas tecnológicos são essenciais para o sucesso do seu negócio. É
           por isso que oferecemos um serviço de Suporte Técnico Personalizado e
           Confiável, projetado para atender às suas necessidades específicas e

@@ -9,7 +9,7 @@ export default function DataAnalysis() {
       <Header notMenu />
       <ContentText title="Análise de Dados Profunda e Estratégica">
         <p>
-          Na tensortech, oferecemos um serviço de Análise de Dados Profunda e
+          Na Tensortech, oferecemos um serviço de Análise de Dados Profunda e
           Estratégica projetado para fornecer insights valiosos que impulsionam
           o crescimento sustentável do seu negócio. Nossa abordagem abrangente e
           orientada para resultados garante que você tenha acesso às informações
